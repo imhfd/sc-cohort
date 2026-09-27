@@ -276,6 +276,27 @@
       .button.floating-cta { padding-inline: 8px; font-size: 10px; }
     }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } .reveal { opacity: 1 !important; transform: none !important; } }
+
+    /* Keep the promise on one line and the offer easy to scan. */
+    .hero-copy { container-type: inline-size; }
+    .hero-copy h1 { max-width: 100%; font-size: clamp(17px, 6.5cqw, 54px); }
+    .headline-line { display: block; white-space: nowrap; }
+    .week-list { width: min(700px, 100%); grid-template-columns: minmax(0, 1fr); }
+    .week, .offer-card { background: var(--forest); color: #f5f2e9; border-color: rgba(245,242,233,.18); }
+    .week:last-child { border: 2px solid var(--gold); }
+    .week-summary, .week-points li { color: #dedfd5; }
+    .week-goal { color: #c6cbbf; border-color: rgba(245,242,233,.18); }
+    .week-goal strong { color: #f5f2e9; }
+    .week-number { color: #e5c58d; border-color: rgba(229,197,141,.45); background: rgba(229,197,141,.08); }
+    .week-ornament { border-color: rgba(229,197,141,.4); }
+    .offer-card { border-top-color: var(--gold); }
+    .offer-head, .offer-card .feature-list li { border-color: rgba(245,242,233,.16); }
+    .offer-card .feature-list li { color: #f5f2e9; }
+    .offer-card .feature-detail, .offer-card .secure-note { color: rgba(245,242,233,.7); }
+    .offer-card .offer-kicker, .offer-card .feature-title, .offer-card .check-icon, .offer-card .price-value { color: #e5c58d; }
+    .offer-card .price-kicker { color: #c6cbbf; }
+    .offer-card .price-button { background: #e5c58d; color: #202821; }
+    .offer-card .price-button:hover { background: #f0d5a4; }
   </style>
 </head>
 <body>
@@ -297,7 +318,7 @@
       <span class="ambient-shape shape-ring" data-float="8" aria-hidden="true"></span>
       <span class="ambient-shape shape-square" data-float="11" aria-hidden="true"></span>
       <div class="wrap hero-copy">
-        <h1>Build your first <span style="white-space: nowrap">10K followers</span><em>without leaving your job.</em></h1>
+        <h1><span class="headline-line">Build your first 10K followers</span><em>without leaving your job.</em></h1>
         <p class="hero-subheading">A focused six-week cohort for Muslim creators growing around a full-time job.</p>
         <div class="hero-action"><a class="button" href="#offer">Join the cohort · $350 <span aria-hidden="true">↓</span></a></div>
         <p class="hero-note">10K is the goal, not a guaranteed result.</p>
